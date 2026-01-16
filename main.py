@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 """Script to populate a significant load of comments and replies for a specific request ID."""
 
+import os
 import random
-from typing import List
 
 import requests
 
 # Configuration
-BASE_URL = "https://127.0.0.1:5000/api/"  # Update this to your instance URL
-ACCESS_TOKEN = "2TdmrgidknCUoBsHuLuNmyblegRbB40Oc7MOwDVPPKSqmbyE5E3hc73gpMz0"  # Update this with a valid access token
-REQUEST_ID = (
-    "a62003e5-3bb1-445b-9b46-b25570a22f40"  # Update this with the actual request ID
-)
+BASE_URL = os.getenv("AUTOPOP_BASE_URL")  # Update this to your instance URL
+ACCESS_TOKEN = os.getenv(
+    "AUTOPOP_ACCESS_TOKEN"
+)  # Update this with a valid access token
+REQUEST_ID = os.getenv("AUTOPOP_REQUEST_ID")
+
 
 # Number of items to create
 NUM_TOP_LEVEL_COMMENTS = 50  # Number of parent comments
