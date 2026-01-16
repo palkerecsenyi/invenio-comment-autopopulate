@@ -20,6 +20,7 @@ NUM_REPLIES_PER_COMMENT = 3  # Number of replies per parent comment
 
 # Randomized content generators
 COMMENT_STARTERS = [
+    "I know",
     "I think",
     "In my opinion",
     "Based on my analysis",
@@ -49,6 +50,7 @@ COMMENT_OPINIONS = [
 ]
 
 COMMENT_CONCERNS = [
+    "you are so wrong it hurts",
     "the timeline seems tight",
     "we should consider the budget implications",
     "the resource allocation needs review",
@@ -79,6 +81,7 @@ COMMENT_QUESTIONS = [
 ]
 
 COMMENT_ACTIONS = [
+    "I would propose you quit.",
     "Let's schedule a meeting to discuss.",
     "I'll review this in detail and follow up.",
     "We should get input from other teams.",
@@ -92,6 +95,7 @@ COMMENT_ACTIONS = [
 ]
 
 REPLY_ACKNOWLEDGMENTS = [
+    "Now get back to work.",
     "Thanks for the feedback!",
     "Good point!",
     "I appreciate your input.",
@@ -119,6 +123,7 @@ REPLY_RESPONSES = [
 ]
 
 REPLY_FOLLOW_UPS = [
+    "You are lucky if I respond.",
     "I'll share an update by end of week.",
     "Let me know if you need more information.",
     "Feel free to reach out if you have questions.",
@@ -132,6 +137,9 @@ REPLY_FOLLOW_UPS = [
 ]
 
 TECHNICAL_TOPICS = [
+    "deleting prod",
+    "force pushing master",
+    "addign a bitcoin miner to the code",
     "database migration",
     "API integration",
     "authentication flow",
